@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Declaire</title>
+</head>
+<body>
+    <p></p>
+    <input type="number" id="age" placeholder="Enter the Age">
+    <button onclick="Voting()">Submit</button>
+    
+    <script>
+       function Voting () {
+        var age=document.getElementById("age").value;
+
+            if (age > 18) 
+            {
+                alert("You are  Eligible for Voting")
+            }
+            else
+            {
+                alert("You are Not Eligibility for Voting")
+            }
+       }
+    
+       
+    </script>
+</body>
+</html>
