@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Html</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+            <div class="logo">
+                <img src="img/logo.jpg" alt="">
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#contact">ContactUs</a></li>
+                   
+                </ul>
+            </nav>
+            <div class="icon">
+                <i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;
+                <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="bars">
+                <i class="fa-solid fa-bars" id="menutoggle"></i>
+            </div>
+    </header>
+   
+    <!-- Video tag use the add video -->
+
+    <div class="vide">
+        <iframe width="100%" height="500px" src="https://www.youtube.com/embed/hlsRSLbYRfs?si=vsw1xD0tldHoLNB5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <!-- About us -->
+    <div class="main_about" id="About">
+        <h1>About Us</h1>
+        <div class="container">
+            <div class="left">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur illum ipsam nemo vel laboriosam impedit quisquam sint delectus animi. Consectetur doloremque quia quaerat officiis labore optio vel corrupti ratione fuga?
+                Tempore voluptates reiciendis, illo nulla eligendi obcaecati eveniet. Odio sunt cumque quidem sapiente eaque voluptate aliquid sed voluptatem quis laudantium, nulla quia molestias quae fugiat officia tempore at atque? Nihil!
+                Minus possimus sapiente voluptatum pariatur
+                 obcaecati, facilis voluptatibus</p>
+            </div>
+            <div class="right">
+                <img src="img/about.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+<!-- =========Contact Us======= -->
+    <div class="contact_main" id="contact">
+            <h1>Contact Us</h1>
+            <form action="">
+               <div class="row"> 
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control mt-4" placeholder="Enter the Name" >
+                </div> 
+                <div class="col-md-4"></div>
+               </div>
+
+               <div class="row"> 
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <input type="tel" class="form-control mt-4" placeholder="Enter the Number" maxlength="10" >
+                </div> 
+                <div class="col-md-4"></div>
+               </div>
+
+               <div class="row"> 
+                <div class="col-md-4"></div>
+                <div class="col-md-4 mt-4">
+                    <textarea name="" class="form-control" id="" placeholder="Enter the Massage" cols="50" rows="4"></textarea>    
+                </div> 
+                <div class="col-md-4"></div>
+               </div>
+
+               <div class="row"> 
+                <div class="col-md-4"></div>
+                <div class="col-md-4 mt-3">
+                   <button class="btn btn-primary">Submit</button>
+                </div> 
+                <div class="col-md-4"></div>
+               </div>
+            </form>
+    </div>
+
+<!-- ==========Footer======= -->
+    <footer>
+        <div class="main">
+           <div class="row">
+            <div class="col-md text-center">
+                <strong style="font-size: 20px; color: white;">CONTACT</strong>
+                <p style="color: rgb(245, 245, 245);">Street:201 Harron Drive<br>City:Ahmedabad<br>State:Gujarat<br>Zip Code:380032 <br>Phone Number:-443-498-7166</p>
+            </div>
+            <div class="col-md text-center">
+                <strong style="font-size: 24px; color: white;">Menu</strong>
+                <ul>
+                    <li class="navi"><a href="#">Home</a></li>
+                    <li class="navi"><a href="#">About</a></li>
+                    <li class="navi"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md text-center">
+                <strong style="font-size: 24px; color: white;">Recent Post</strong>
+                <p style="color:rgb(245, 245, 245) ;">Breaking Down Barries<br>A Celabration of Success<br>A World of Opportunity</p>
+            </div>
+            <div class="col-md text-center">
+                <strong style="color: white;">NEWS LATTER</strong>
+            <div class="icons">
+                <i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;
+                <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;
+                <i class="fa-solid fa-user"></i>
+            </div>
+            </div>
+           </div>
+        </div>
+    </footer>    
+
+
+    <script>
+           $(document).ready(function () 
+        {
+            $("#menutoggle").click(function () 
+            {
+                $("#menu").fadeToggle("3000");
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,457 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+/* ===========Header============== */
+header
+{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+.logo
+{
+    width: 20%;
+    height: inherit;
+    /* background-color: brown; */
+}
+.logo img
+{
+    width: 100%;
+    height: inherit;
+
+}
+nav
+{
+    width: 60%;
+    height: inherit;
+    /* background-color: blueviolet; */
+}
+
+nav ul
+{
+    display: flex;
+    
+}
+nav ul li
+{
+    list-style: none;
+    padding: 30px 5px 5px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    margin-left: 4rem;
+}
+nav ul li a:hover
+{
+    color: orange;
+    transition: 0.7s;
+}
+
+.icon
+{
+    width: 20%;
+    height: inherit;
+    /* background-color: red; */
+    padding: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+.icon i:hover
+{
+    color: red;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.bars
+{
+    width: 10%;
+    height: inherit;
+    /* background-color: yellowgreen; */
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 2rem;
+    display: none;
+}
+
+
+/* =============media Qury Header=======  */
+@media (min-width:320px) and (max-width:420px)
+ /*Mobile  */
+{
+    .logo
+    {
+    width: 50%;
+    height: inherit;
+    /* background-color: brown; */
+    }
+    .logo img
+    {
+    width: 100%;
+    height: inherit;
+    }
+   
+    .icon
+    {
+        display: none;
+    }
+    .bars
+    {
+    width: 40%;
+    height: inherit;
+    /* background-color: yellowgreen; */
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 2rem;
+    display: block;
+    }
+    nav
+    {
+        width: 100%;
+        /* background-color: red; */
+        margin-top: 6rem;
+
+    }
+    nav ul
+    {
+    display: none;
+    width:225%;
+    height: 250px;
+    background-color: white;
+        margin-left: -10rem;
+   
+    }
+    nav ul li
+    {
+       
+    list-style: none;
+    text-align: center;
+    /* padding: 30px 5px 5px; */
+    /* background-color: aqua; */
+    }
+    nav ul li a
+    {
+    text-decoration: none;
+    color: red;
+    /* font-size: 1.5rem; */
+    /* margin-left: 4rem; */
+    }
+}
+
+@media (min-width:421px) and (max-width:768px)
+{
+    .logo
+    {
+    width: 50%;
+    height: inherit;
+    /* background-color: brown; */
+    }
+    .logo img
+    {
+    width: 100%;
+    height: inherit;
+    }
+   
+    .icon
+    {
+        display: none;
+    }
+    .bars
+    {
+    width: 40%;
+    height: inherit;
+    /* background-color: yellowgreen; */
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 2rem;
+    display: block;
+    }
+    nav
+    {
+        width: 100%;
+        /* background-color: red; */
+        margin-top: 6rem;
+
+    }
+    nav ul
+    {
+    display: none;
+    width:225%;
+    height: 250px;
+    background-color: white;
+        margin-left: -10rem;
+   
+    }
+    nav ul li
+    {
+       
+    list-style: none;
+    text-align: center;
+    /* padding: 30px 5px 5px; */
+    /* background-color: aqua; */
+    }
+    nav ul li a
+    {
+    text-decoration: none;
+    color: red;
+    /* font-size: 1.5rem; */
+    /* margin-left: 4rem; */
+    }
+}
+
+/* =========Video======== */
+.vide
+{
+    width: 100%;
+    height: 500px;
+    /* background-color: aquamarine; */
+}
+
+/* ======About Section===== */
+.main_about
+{
+    width: 100%;
+    height: 500px;
+    margin-top: 5rem;
+    /* background-color: blueviolet; */
+    /* margin: 10px; */
+    /* margin-top: 10px; */
+}
+.main_about h1
+{
+    /* background-color: bisque; */
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    /* color: ; */
+    /* font-size: calc(32px+10vh); */
+}
+.container
+{
+    width: 80%;
+    height: 400px;
+    /* background-color: red; */
+    display: flex;
+    margin-left: 6rem;
+    margin-top: 30px;
+}
+.container .left
+{
+    width: 40%;
+    height: inherit;
+    /* background-color: blue; */
+}
+.left p
+{
+    word-spacing: 1.2;
+    font-size: 20px;
+    padding-top: 15px;
+    width: 90%;
+    margin-left: 10px;
+}
+.container .right
+{
+    width: 60%;
+    height: inherit;
+    /* background-color: cyan; */
+}
+.container .right img
+{
+    width: 100%;
+    height: inherit;
+}
+
+/* =======Mobiel Main about ====== */
+@media (min-width:320px) and (max-width:420px)
+{
+    .container
+    {
+        width: 100%;
+        height: 700px;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    .container .left
+    {
+        width: 40%;
+        height: inherit;
+        /* background-color: blue; */
+    }
+    .left p
+    {
+        word-spacing: 1.2;
+        font-size: 18px;
+        padding-top: 15px;
+        width: 20rem;
+        margin-left: 30px;
+        text-align: justify;
+    }
+    .container .right
+    {
+        width: 100%;
+        height: 300px;
+        /* background-color: cyan; */
+    }
+}
+@media (min-width:421px) and (max-width:768px)
+{
+    .container
+    {
+        width: 100%;
+        height: 700px;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    .container .left
+    {
+        width: 40%;
+        height: inherit;
+        /* background-color: blue; */
+    }
+    .left p
+    {
+        word-spacing: 1.2;
+        font-size: 18px;
+        padding-top: 15px;
+        width: 20rem;
+        margin-left: 30px;
+        text-align: justify;
+    }
+    .container .right
+    {
+        width: 100%;
+        height: 300px;
+        /* background-color: cyan; */
+    }
+}
+
+
+/* ======contact Us===== */
+.contact_main
+{
+    width: 100%;
+    height: 400px;
+    /* background-color: aquamarine; */
+    margin-top: 60px;
+}
+.contact_main h1
+{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+}
+
+/* =======Mobiel Contact ====== */
+@media (min-width:320px) and (max-width:420px)
+{
+    .contact_main
+    {
+    width: 100%;
+    height: 400px;
+    /* background-color: aquamarine; */
+    margin-top: 22rem;
+ 
+    }
+}
+@media (min-width:421px) and (max-width:768px)
+{
+    
+    .contact_main
+    {
+    width: 100%;
+    height: 400px;
+    /* background-color: aquamarine; */
+    margin-top: 22rem;
+ 
+    }
+}
+
+/* Footer */
+footer
+{
+    width: 100%;
+    height: 200px;
+    /* background-color: blueviolet; */
+    margin-top: 30px;
+}
+.main
+{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+.navi
+{
+    list-style: none;
+}
+.navi a
+{
+    text-decoration: none;
+    color: rgb(234, 227, 227);
+
+}
+.navi a:hover
+{
+    color: red;
+    transition: 0.6s;
+}
+.icons
+{
+    color: wheat;
+    font-size: 24px;
+    margin-top: 20px;
+}
+.icons i:hover
+{
+    color: red;
+    transition: 0.8s;
+    cursor: pointer;
+}
+/* =======Mobiel Footer ====== */
+@media (min-width:320px) and (max-width:420px)
+{
+    footer
+    {
+        width: 100%;
+        height: 500px;
+    }
+    .main
+    {
+        width: 100%;
+        height: 550px;
+        background-color: black;
+    }
+}
+
+@media (min-width:421px) and (max-width:768px)
+{
+    footer
+    {
+        width: 100%;
+        height: 500px;
+    }
+    .main
+    {
+        width: 100%;
+        height: 550px;
+        background-color: black;
+    }
+}
