@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd|| Even Number</title>
+</head>
+<body>
+    <input type="number" placeholder="Enter the Number" id="numb">
+    <button onclick="odd()">submit</button>
+    <script>
+        function odd () 
+        {
+                var number=document.getElementById("numb").value;
+                if (number%2 === 0) 
+                {
+                    alert("This number is Even")
+                }
+                else
+                {
+                    alert("This number is odd")
+                }
+        }
+    </script>
+</body>
+</html>
