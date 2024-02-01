@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body onload="getcookiedata()">
+
+                <!--Use for Cookie after login Email and Password Auto Save and Next time Login without email and password 
+                Auto filed Email and Password. -->
+
+
+
+        <div class="container">
+            <h2 class="text-center mt-5">Login</h2>
+    <form action="/action_page.php" >
+        <div class="container">
+        <div class="row">
+        <div class="col-md-3"></div>
+        <div class=" col-md-3 mt-2">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+        <div class="col-md-3"></div>
+    </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <label for="pwd" class="form-label mt-2">Password:</label>
+                <input type="password" id="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+              </div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="form-check mb-3 col-md-3">
+                <label class="form-check-label mt-3">
+                  <input class="form-check-input " type="checkbox" onclick="cookies()" name="remember"> Remember me
+                </label>
+              </div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+        <div class="col-md-3"></div>
+        </div>
+    </form>
+
+    </div>
+</div>
+
+
+    <script>
+        function cookies() 
+        {
+            var user=document.getElementById("email").value;
+            var password=document.getElementById("password").value;
+
+            document.cookie="myusername="+user+";path=http://127.0.0.1:5500/index.html";
+            document.cookie="mypassword="+password+";path=http://127.0.0.1:5500/index.html";
+        }
+        function getcookiedata() 
+        {
+                consol.log(document.cookie);
+              var user=getCookie("myusername");
+              var pswd=getCookie("mypassword");
+              document.getElementById("email").value=user;
+              document.getElementById("password").value=pswd;
+        }
+
+        function getCookie(cname) 
+        {
+            var name=cname+"=";
+            var decodedCookie=decodeURIComponent(document.cookie);
+            var ca=decodedCookie.split(";");
+            for(var i =0;i<ca.length;i++)
+            {
+                var c=ca[i];
+                while(c.charAt(0) == '')
+                {
+                    c=c.substring(1);
+                }
+                if (c.indexOf(name) == 0) 
+                {
+                    return c.substring(name.length,c.length)
+                }
+            }
+            return "";
+        }
+    </script>
+</body>
+</html>
